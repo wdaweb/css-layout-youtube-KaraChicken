@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    #header {
+      width: 100%;
+      height: 12%;
+      background: white;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    #sidebar {
+      /* view port height */
+      height: calc(100vh - 12%);
+      width: 15%;
+      /* background: lightgoldenrodyellow; */
+      position: fixed;
+      left: 0;
+      top: 12%;
+      clear: both;
+    }
+
+    #content {
+      width: calc(100% - 15%);
+      height: auto;
+      margin-left: 15%;
+      /* background: rgb(248, 192, 221); */
+      position: absolute;
+      top: 12%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/video.css">
+</head>
+
+<body>
+  <div id="header">
+      <div class="ThreeLine-box">
+        <img class="ThreeLine" src="./images/icon/ThreeLine.png" alt="">
+      </div>
+      <img class="icon" src="./images/YT.png" alt="YT-icon" title="YT-icon">
+      <div class="search">
+        <input class="text" type="text" placeholder="搜尋">
+        <div class="search-box"><img class="search-right" src="./images/icon/search.png"></div>
+      </div>
+      <ul>
+        <li class="login"><img src="../images/icon/Profile.png" alt="">登入</li>
+      </ul>
+  </div>
+  <div id="sidebar">
+    <iframe id="sidebar" class="sidebarText" src="./iframe/sidbar.html" frameborder="0"></iframe>
+  </div>
+  <div id="content">
+    <!-- 上方欄位 -->
+    <div class="title">
+      <div class="box" id="all">全部</div>
+      <div class="box">音樂</div>
+      <div class="box">遊戲</div>
+      <div class="box">直播中</div>
+      <div class="box">新聞</div>
+      <div class="box">居家修繕</div>
+      <div class="box">木工</div>
+      <div class="box">動畫</div>
+      <div class="box">手工藝</div>
+      <div class="box">動作冒險遊戲</div>
+      <div class="box btn-right"><img src="./images/icon/arrow-right.png" alt=""></div>
+    </div>
+    <!-- 下方影片 -->
+    <!-- 影片 -->
+    <div class="video-linkStart">
+      <div class="video-box">
+          <!-- <img class="video" src="../images/video-library/hq720.webp" alt=""> -->
+          <video class="action" src="./other/action01.mp4" autoplay loop muted></video>
+          <div class="user-box">
+            <img class="video-user" src="./images/video-library/unnamed.jpg" alt="">
+            <p>【オリジナル楽曲】粛聖!! ロリ神レクイエム☆ / しぐれうい（9さい）<p>
+            <p>しぐれうい</p>
+            <p>觀看次數：2747萬次</p>
+        </div>
+      </div>
+    </div>
+    <!-- 影片 -->
+    <div class="video-linkStart">
+      <div class="video-box">
+          <!-- <img class="video" src="../images/video-library/hq720.webp" alt=""> -->
+          <video class="action" src="./other/loli_dance.mp4" autoplay loop muted></video>
+          <div class="user-box">
+            <img class="video-user" src="./images/video-library/loli_dance.jpg" alt="">
+            <p>Loli dance meme (FBI, NEET) extended version<p>
+            <p>Morgist</p>
+            <p>觀看次數：192萬次</p>
+        </div>
+      </div>
+  </div>
+    <!-- 影片 -->
+    <div class="video-linkStart">
+      <div class="video-box">
+          <img class="video" src="./images/video-library/kuru.webp" alt="">
+          <div class="user-box">
+            <img class="video-user" src="../images/video-library/kuru.jpg" alt="">
+            <p>我不敢相信 咕嚕<p>
+            <p>梁貢丸</p>
+            <p>觀看次數：52萬次</p>
+        </div>
+      </div>
+  </div>
+  <!-- 影片 -->
+  <div class="video-linkStart">
+    <div class="video-box">
+        <img class="video" src="./images/video-library/noeat.webp" alt="">
+        <div class="user-box">
+          <img class="video-user" src="./images/video-library/noeat.jpg" alt="">
+          <p>夜市人生-我要吃炒飯<p>
+          <p>楊致維</p>
+          <p>觀看次數：70萬次</p>
+      </div>
+    </div>
+  </div>
+  <!-- 影片 -->
+  <div class="video-linkStart">
+    <div class="video-box">
+        <img class="video" src="./images/video-library/gun.webp" alt="">
+        <div class="user-box">
+          <img class="video-user" src="./images/video-library/gun.jpg" alt="">
+          <p>光束噴槍<p>
+          <p>小飛機</p>
+          <p>觀看次數：35萬次</p>
+      </div>
+    </div>
+  </div>
+  <!-- 影片 -->
+  <div class="video-linkStart">
+    <div class="video-box">
+        <img class="video" src="./images/video-library/fight.webp" alt="">
+        <div class="user-box">
+          <img class="video-user" src="./images/video-library/fight.jpg" alt="">
+          <p>你們不要再打了啦 馬保國版 【保國之巔】馬保國決戰紫禁之巔<p>
+          <p>廢哥 FeiGo</p>
+          <p>觀看次數：233萬次</p>
+      </div>
+    </div>
+  </div>
+<!-- 影片 -->
+  <div class="video-linkStart">
+    <div class="video-box">
+        <img class="video" src="./images/video-library/fly.webp" alt="">
+        <div class="user-box">
+          <img class="video-user" src="./images/video-library/fly.jpg" alt="">
+          <p>[AI補幀-59fps] 飛天麥可-夜市人生 EP108<p>
+          <p>
+            Jaden Irons</p>
+          <p>觀看次數：16萬次</p>
+      </div>
+    </div>
+  </div>
+<!-- 影片 -->
+  <div class="video-linkStart">
+    <div class="video-box">
+        <img class="video" src="./images/video-library/bean.webp" alt="">
+        <div class="user-box">
+          <img class="video-user" src="./images/video-library/bean.jpg" alt="">
+          <p>傑克魔豆<p>
+          <p>SMITH JIM</p>
+          <p>觀看次數：1.7萬次</p>
+      </div>
+    </div>
+  </div>
+<!-- 影片 -->
+  <div class="video-linkStart">
+    <div class="video-box">
+        <img class="video" src="./images/video-library/cadu.webp" alt="">
+        <div class="user-box">
+          <img class="video-user" src="./images/video-library/cado.jpg" alt="">
+          <p>【國動】ULTRA K+D / O.O.A.A.O.A.A.【1080p HD】<p>
+          <p>Tamaki阿俊</p>
+          <p>觀看次數：48萬次</p>
+      </div>
+    </div>
+  </div>
+<!-- 影片 -->
+  <div class="video-linkStart">
+    <div class="video-box">
+        <img class="video" src="./images/video-library/Neal.webp" alt="">
+        <div class="user-box">
+          <img class="video-user" src="./images/video-library/neal.jpg" alt="">
+          <p>咖喱拌饭4K<p>
+          <p>Kwama</p>
+          <p>觀看次數：5.9萬次</p>
+      </div>
+    </div>
+  </div>
+<!-- 影片 -->
+  <div class="video-linkStart">
+    <div class="video-box">
+        <img class="video" src="./images/video-library/mouse.webp" alt="">
+        <div class="user-box">
+          <img class="video-user" src="./images/video-library/mouse.jpg" alt="">
+          <p>hammie boye v2 - new and improved<p>
+          <p>sad meme boi</p>
+          <p>觀看次數：1294萬次</p>
+      </div>
+    </div>
+  </div>
+<!-- 影片 -->
+  <div class="video-linkStart">
+    <div class="video-box">
+        <img class="video" src="./images/video-library/bug.webp" alt="">
+        <div class="user-box">
+          <img class="video-user" src="./images/video-library/bug.jpg" alt="">
+          <p>網友們利用行動支付的漏洞狂撈錢跟買跑車，被抓包後欠下巨債還信用破產 (中文字幕)<p>
+          <p>B.C.&Lowy</p>
+          <p>觀看次數：18萬次</p>
+      </div>
+    </div>
+  </div>
+<!-- 影片 -->
+  <div class="video-linkStart">
+    <div class="video-box">
+        <video class="action" src="./other/joker.mp4" autoplay loop muted></video>
+        <div class="user-box">
+          <img class="video-user" src="./images/video-library/joker.jpg" alt="">
+          <p>cyclone joker<p>
+          <p>WenFeng Ng</p>
+          <p>觀看次數：22萬次</p>
+      </div>
+    </div>
+  </div>
+  <!-- 影片 -->
+<div class="video-linkStart">
+  <div class="video-box">
+    <video class="action" src="./other/Kamen Rider W Henshin.mp4" autoplay loop muted></video>
+      <div class="user-box">
+        <img class="video-user" src="./images/video-library/gun.jpg" alt="">
+        <p>Kamen Rider W Henshin<p>
+        <p>THE ULTRA RANGER</p>
+        <p>觀看次數：3.1萬次</p>
+    </div>
+  </div>
+</div>
+<!-- 影片 -->
+  <div class="video-linkStart">
+    <div class="video-box">
+        <video class="action" src="./other/accel.mp4" autoplay loop muted></video>
+        <div class="user-box">
+          <img class="video-user" src="./images/video-library/accel.jpg" alt="">
+          <p>A哥你到底行不行？｜【風都偵探】第八話精華<p>
+          <p>Muse木棉花-TW</p>
+          <p>觀看次數：2.9萬次</p>
+      </div>
+    </div>
+  </div>
+<!-- 影片 -->
+<div class="video-linkStart">
+  <div class="video-box">
+      <video class="action" src="./other/Kamen Rider W  Accel Henshin.mp4" autoplay loop muted></video>
+      <div class="user-box">
+        <img class="video-user" src="./images/video-library/kameanRiderW-accel.jpg" alt="">
+        <p>Kamen Rider W - Accel Henshin<p>
+        <p>Dank Meme Daddy</p>
+        <p>觀看次數：8.8萬次</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+.title {
+    position: relative;
+    height: 5%;
+    width: 100%;
+    margin-bottom: 3%;
+    margin-top: 0;
+    /* background-color: #b4dc6e; */
+}
+.title div {
+    cursor: pointer;
+}
+.box {
+    height: 5%;
+    display: block;
+    float: left;
+    padding: 1%;
+    border-radius: 5px;
+    margin-left: 1%;
+    background-color: rgba(185, 185, 185, 0.373);
+}
+.box:hover {
+    background-color: rgba(104, 104, 104, 0.373);
+}
+#all {
+    color: white;
+    background-color: black;
+}
+.btn-right {
+    width: 2%;
+    height: 4%;
+    padding: 1%;
+    margin: 0;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+}
+.btn-right img {
+    width: 100%;
+    height: 100%;
+}
+.video-linkStart {
+    width: 23%;
+    height: 1%;
+    padding: 0;
+    margin: 1%;
+}
+.video-box {
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-box {
+    cursor: pointer;
+    position: relative;
+}
+
+.user-box p {
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.video-user {
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 100%;
+}
+
+/* video */
+.action {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
